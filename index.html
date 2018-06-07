@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>LogIN</title>
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -29,7 +29,6 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    width: 340px;
 }
 
 button {
@@ -39,7 +38,7 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    /*width: 340px;*/
+    /*width: 40%;*/
     display: inline-block;
     padding-left: 156px;
     padding-right: 156px;
@@ -74,26 +73,9 @@ span.psw {
     padding-top: 16px;
 }
 
-@media screen and (max-width: 400px){
-    input[type=text],input[type=password]{
-        width: 250px;
-    }
-    button{
-
-    padding-left: 100px;
-    padding-right: 100px;
-    }
-}
-
 </style>
 <script type="text/javascript">
 	alert("Username --> username\nPassword --> password");
-    pixel = document.body ;
-    // if (pixel>400) 
-    // {
-    //     document.getElementsByTagName('text').size.innerHTML = '30';
-    //     document.getElementsByTagName('password').size.innerHTML = '30';
-    // }
 </script>
 </head>
 <body>
@@ -106,10 +88,10 @@ span.psw {
 
   <div class="container">
     <label for="uname"><b>Username</b></label><br>
-    <input type="text" placeholder="Username" name="uname"  pattern="username" required><br>
+    <input type="text" placeholder="Username" name="uname" size="43" pattern="username" required><br>
 
     <label for="psw"><b>Password</b></label><br>
-    <input type="password" placeholder="Password" name="psw"  pattern="password" required><br>
+    <input type="password" placeholder="Password" name="psw" size="43" pattern="password" required><br>
         
     <button type="submit">Login</button><br>
     <label>
